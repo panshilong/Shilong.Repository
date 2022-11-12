@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc1_3.xml" value="0.28125" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc2_1.xml" value="0.30052083333333335" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc2_2.xml" value="0.30052083333333335" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc2_3.xml" value="0.24139492753623187" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc2_4.xml" value="0.33" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/two.xml" value="0.28125" />
-        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.304" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main3.xml" value="0.14764492753623187" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/content_main.xml" value="0.14764492753623187" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/home_floatview.xml" value="0.35280797101449274" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_list_view.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/myitems.xml" value="0.165625" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/mylistlayout.xml" value="0.165625" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/nihao.xml" value="0.25" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc2_4.xml" value="0.165625" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc3_1.xml" value="0.16" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/sc3_item_list_view.xml" value="0.25" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/layout/text_row_item.xml" value="0.3609375" />
+        <entry key="..\:/Users/panshilong/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu.xml" value="0.3619791666666667" />
       </map>
     </option>
   </component>
