@@ -1,4 +1,4 @@
-package com.example.myapplication.adapters;
+package com.example.myapplication.sc_3;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,17 +11,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.beams.ItemBean;
-import com.example.myapplication.beams.Sc3_ItemBean;
 
 import java.util.List;
 
-public class Sc3_ListViewAdapter extends RecyclerView.Adapter<Sc3_ListViewAdapter.InnerHolder> {
+public class SC3_1_ListViewAdapter extends RecyclerView.Adapter<SC3_1_ListViewAdapter.InnerHolder> {
 
-    private  List<Sc3_ItemBean> mdata;
+    private  List<SC3_1_ItemBean> mdata;
 
     //通过构造方法传递数据
-    public Sc3_ListViewAdapter(List<Sc3_ItemBean> data){
+    public SC3_1_ListViewAdapter(List<SC3_1_ItemBean> data){
         this.mdata=data;
     }
 
@@ -29,7 +27,7 @@ public class Sc3_ListViewAdapter extends RecyclerView.Adapter<Sc3_ListViewAdapte
     //用于创建条目的View
     @NonNull
     @Override
-    public Sc3_ListViewAdapter.InnerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SC3_1_ListViewAdapter.InnerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
 
@@ -39,7 +37,7 @@ public class Sc3_ListViewAdapter extends RecyclerView.Adapter<Sc3_ListViewAdapte
         //两个步骤
         //1 拿到view
         //2 创建InnerHolder——用来复用的
-        return new InnerHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.sc3_item_list_view,parent,false));
+        return new InnerHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.sc3_1_itemlist_view,parent,false));
         //这里的layout是item模板的
 //        View view=View.inflate(parent.getContext(),R.layout.sc3_item_list_view,null);
 //        return new InnerHolder(view);
@@ -47,7 +45,7 @@ public class Sc3_ListViewAdapter extends RecyclerView.Adapter<Sc3_ListViewAdapte
 
     //这个方法用于绑定内部holder的，一般用来设置数据
     @Override
-    public void onBindViewHolder(@NonNull Sc3_ListViewAdapter.InnerHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SC3_1_ListViewAdapter.InnerHolder holder, int position) {
 
         //在这里设置数据
         holder.setData(mdata.get(position));
@@ -91,7 +89,7 @@ public class Sc3_ListViewAdapter extends RecyclerView.Adapter<Sc3_ListViewAdapte
         }
 
         //这个方法用于设置数据
-        public void setData(Sc3_ItemBean itemBean) {
+        public void setData(SC3_1_ItemBean itemBean) {
             //开始设置数据
             mtext.setText(itemBean.title);
             mimage.setImageResource(itemBean.icon);

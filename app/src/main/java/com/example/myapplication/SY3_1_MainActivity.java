@@ -11,21 +11,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.myapplication.adapters.ListViewAdapter;
-import com.example.myapplication.beams.ItemBean;
+import com.example.myapplication.adapters.SY3_1_ListViewAdapter;
+import com.example.myapplication.beams.SY3_1_ItemBean;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity2 extends AppCompatActivity {
+public class SY3_1_MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity2";
     private RecyclerView mlist;
-   private List<ItemBean> mdata;
+   private List<SY3_1_ItemBean> mdata;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sc3_1);
+        setContentView(R.layout.sy3_1);
 
         //找到控件
         mlist =(RecyclerView)this.findViewById(R.id.recycler_view);
@@ -45,7 +45,7 @@ public class MainActivity2 extends AppCompatActivity {
         //创建模拟数据
         for(int i=0;i<10;i++){
             // 创建数据对象
-            ItemBean data =new ItemBean();
+            SY3_1_ItemBean data =new SY3_1_ItemBean();
 //            data.icon=;
             data.title="haha"+i;
 
@@ -58,7 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
         mlist.setLayoutManager(layoutManager);
 
         //创建适配器
-        ListViewAdapter adapter=new ListViewAdapter(mdata);
+        SY3_1_ListViewAdapter adapter=new SY3_1_ListViewAdapter(mdata);
         //设置到setAdapter(到recyclerView里去)
         mlist.setAdapter(adapter);
     }
@@ -67,7 +67,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
+        getMenuInflater().inflate(R.menu.sy3_1_mene,menu);
         return super.onCreateOptionsMenu(menu);
 
     }

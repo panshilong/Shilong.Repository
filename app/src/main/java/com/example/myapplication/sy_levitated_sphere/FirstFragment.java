@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.sy_levitated_sphere;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentFirstBinding;
 
 public class FirstFragment extends Fragment {

@@ -8,16 +8,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.beams.ItemBean;
+import com.example.myapplication.beams.SY3_1_ItemBean;
 
 import java.util.List;
 
-public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerHolder> {
+public class SY3_1_ListViewAdapter extends RecyclerView.Adapter<SY3_1_ListViewAdapter.InnerHolder> {
 
-    private  List<ItemBean> mdata;
+    private  List<SY3_1_ItemBean> mdata;
 
     //通过构造方法传递数据
-    public ListViewAdapter(List<ItemBean> data){
+    public SY3_1_ListViewAdapter(List<SY3_1_ItemBean> data){
         this.mdata=data;
     }
 
@@ -25,7 +25,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerH
     //用于创建条目的View
     @NonNull
     @Override
-    public ListViewAdapter.InnerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SY3_1_ListViewAdapter.InnerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
 
@@ -41,7 +41,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerH
 
     //这个方法用于绑定内部holder的，一般用来设置数据
     @Override
-    public void onBindViewHolder(@NonNull ListViewAdapter.InnerHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SY3_1_ListViewAdapter.InnerHolder holder, int position) {
 
         //在这里设置数据
         holder.setData(mdata.get(position));
@@ -70,7 +70,7 @@ public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerH
         }
 
         //这个方法用于设置数据
-        public void setData(ItemBean itemBean) {
+        public void setData(SY3_1_ItemBean itemBean) {
             //开始设置数据
             mtext.setText(itemBean.title);
         }

@@ -1,11 +1,11 @@
-package com.example.myapplication.beams;
+package com.example.myapplication.sc_3;
 
 
 //数据具体对象
-public class Sc3_ItemBean {
+public class SC3_1_ItemBean {
     public int icon;
     public String title;
-    public Sc3_ItemBean(int icon,String title){
+    public SC3_1_ItemBean(int icon, String title){
         this.icon=icon;
         this.title=title;
     }

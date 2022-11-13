@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.sy_levitated_sphere;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+
+import com.example.myapplication.R;
 
 /**
  * Author:Stephen

@@ -1,30 +1,25 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
-import com.example.myapplication.adapters.ListViewAdapter;
-import com.example.myapplication.adapters.Sc3_ListViewAdapter;
-import com.example.myapplication.beams.ItemBean;
-import com.example.myapplication.beams.Sc3_Datas;
-import com.example.myapplication.beams.Sc3_ItemBean;
+import com.example.myapplication.sc_3.SC3_1_ListViewAdapter;
+import com.example.myapplication.sc_3.SC3_1_Datas;
+import com.example.myapplication.sc_3.SC3_1_ItemBean;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Main3Activity extends AppCompatActivity {
+public class SC3_1_MainActivity extends AppCompatActivity {
 
-    private List<Sc3_ItemBean> mdata;
+    private List<SC3_1_ItemBean> mdata;
     private RecyclerView mlist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.sc3_1);
 
         //找到控件
         mlist =(RecyclerView)this.findViewById(R.id.sc3_ListView);
@@ -37,7 +32,7 @@ public class Main3Activity extends AppCompatActivity {
     private void initData() {
         //List-DataBea>——>Adapter>——>setAdapter>——>显示数据
         //创建数据集合
-        Sc3_Datas datas=new Sc3_Datas();
+        SC3_1_Datas datas=new SC3_1_Datas();
         mdata=datas.GetDataList();
 
         //创建模拟数据
@@ -58,7 +53,7 @@ public class Main3Activity extends AppCompatActivity {
 //        mlist.setLayoutManager(layoutManager);
 
         //创建适配器
-        Sc3_ListViewAdapter adapter=new Sc3_ListViewAdapter(mdata);
+        SC3_1_ListViewAdapter adapter=new SC3_1_ListViewAdapter(mdata);
         //设置到setAdapter(到recyclerView里去)
         mlist.setAdapter(adapter);
     }

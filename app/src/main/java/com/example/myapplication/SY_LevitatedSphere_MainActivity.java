@@ -4,32 +4,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Bundle;
 import android.provider.Settings;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication.sy_levitated_sphere.FloatBallView;
 
 
-
-
-public class MainActivity extends AppCompatActivity {
+public class SY_LevitatedSphere_MainActivity extends AppCompatActivity {
 //        这三个经常是同时出现的
     private List<Map<String,Object>> lists;
     private SimpleAdapter adapter;
@@ -56,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     //检查是否已经授予权限
-                    if (!Settings.canDrawOverlays(MainActivity.this)) {
+                    if (!Settings.canDrawOverlays(SY_LevitatedSphere_MainActivity.this)) {
                         //若未授权则请求权限
                         Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
                         intent.setData(Uri.parse("package:" + getPackageName()));
@@ -69,17 +61,17 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FloatBallView.getInstance(MainActivity.this).createFloatView();
+                FloatBallView.getInstance(SY_LevitatedSphere_MainActivity.this).createFloatView();
 
             }
         });
 
 //这边是点击悬浮按钮的响应事件
 
-        FloatBallView.getInstance(MainActivity.this).onFloatViewClick(new View.OnClickListener() {
+        FloatBallView.getInstance(SY_LevitatedSphere_MainActivity.this).onFloatViewClick(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "点击了悬浮球", Toast.LENGTH_LONG).show();
+                Toast.makeText(SY_LevitatedSphere_MainActivity.this, "点击了悬浮球", Toast.LENGTH_LONG).show();
             }
         });
 
